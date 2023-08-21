@@ -1,0 +1,17 @@
+{% extends 'partials/base.html' %}
+{% block title %}Products Edit Page{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row my-4">
+    <div class="col-md-6 offset-md-3 p-3 bg-white">
+        <h5 class="text-center">Edit Item</h5>
+        <hr>
+        <form method='post'>
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input class="btn" type="submit" value="Confirm" style="background: #CFFDE1;">
+        </form>
+    </div>
+</div>
+{% endblock %}

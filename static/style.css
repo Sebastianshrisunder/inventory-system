@@ -1,0 +1,12 @@
+body{
+    background: white;
+}
+.my-card:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+#staff{
+    background-color: #FED049 !important;
+}
+

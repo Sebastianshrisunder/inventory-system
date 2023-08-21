@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <div class="card-header text-dark">
+                    Information
+                </div>
+                <div class="card-body">
+                    <marquee behavior="" direction="">
+                        <h3 class="my-4">New Information</h3>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 mt-4">
+            <div class="card">
+                <div class="card-header  text-dark">
+                    Dashboard Statistics
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-staff' %}">
+                                <div class="card my-card shadow" style="background-color: #FED049 !important;">
+                                    <div class="card-body text-center">
+                                        <h5  style="color:white;">Staff <i class="fas fa-users"></i></h5>
+                                        <h5>{{ workers_count }}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-products' %}">
+                                <div class="card my-card shadow" style="background-color: #68B984 !important;">
+                                    <div class="card-body text-center">
+                                        <h5  style="color:white;">Products <i class="fas fa-box"></i></h5>
+                                        <h5>{{items_count}}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-orders' %}">
+                                <div class="card my-card shadow" style="background-color: #3D5656 !important;">
+                                    <div class="card-body text-center">
+                                        <h5  style="color:white;">Orders <i class="fas fa-shipping-fast"></i></h5>
+                                        <h5>{{order_count}}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
